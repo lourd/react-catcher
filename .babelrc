@@ -1,0 +1,13 @@
+{
+  "env": {
+    "test": {
+      "presets": ["react"],
+      "plugins": ["transform-es2015-modules-commonjs"]
+    },
+    "production": {
+      "plugins": [
+        ["transform-react-remove-prop-types", { "removeImport": true }]
+      ]
+    }
+  }
+}

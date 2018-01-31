@@ -1,0 +1,48 @@
+{
+  "name": "@lourd/react-catcher",
+  "version": "0.1.0",
+  "description":
+    "React component for handling caught render errors with a function prop",
+  "repository": "lourd/react-catcher",
+  "homepage": "https://github.com/lourd/react-catcher",
+  "author": "Louis DeScioli (descioli.design)",
+  "license": "MIT",
+  "main": "dist/react-catcher.js",
+  "module": "index.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "@lourd/deferred": "^0.1.0",
+    "babel-core": "^6.17.0",
+    "babel-jest": "^22.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.12",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "gzip-size": "^3.0.0",
+    "jest": "^22.1.4",
+    "pretty-bytes": "^4.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rollup": "^0.55.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "keywords": ["react component", "testing", "react", "error", "catch"],
+  "jest": {
+    "setupFiles": ["./scripts/testSetup.js"]
+  }
+}
